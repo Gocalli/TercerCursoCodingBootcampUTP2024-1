@@ -66,13 +66,13 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-bottom: 20px;
-    
+    z-index: -1;
 
 }
 
 .div-inner {
     position: relative;
-    width: 20%;
+    width: 80%;
     height: 20%;
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -94,7 +94,15 @@ section {
     transform: rotateY(180deg);
 }
 
+.div-back img {
+    width: 100%;
+    height: auto;
+}
 
+.div-front img {
+    width: 100%;
+    height: auto;
+}
 
 
 
