@@ -8,7 +8,7 @@ function App() {
   const [firstWord, setFirstWord] = useState('');
   const [error, setError] = useState('');
 
-  const fetchCat = () => {
+  const fetchCatFact = () => {
     setError('');
     fetch('https://catfact.ninja/fact')
       .then(response => response.json())
