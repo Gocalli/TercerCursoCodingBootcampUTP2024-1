@@ -6,7 +6,7 @@ function App() {
 
   return (
     
-    <div>
+    <div className="Container">
 
       <h1>Las siguientes personas son personas de un gran exito en la vida</h1>
 
