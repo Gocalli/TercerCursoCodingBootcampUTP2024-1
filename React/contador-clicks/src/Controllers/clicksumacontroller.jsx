@@ -1,12 +1,9 @@
 
 
-export function Button({ texto, claseBoton, manejarBoton }){
+export function Button({texto, claseBoton}){
     
     return(
-       <button className={ claseBoton ? "boton-click" : "boton-reiniciar" }
-       onClick={manejarBoton}>
-       {texto}
-       </button>
+       <button className={claseBoton ? "boton-click" : "boton-reiniciar"}>{texto}</button>
     )
 
 }
