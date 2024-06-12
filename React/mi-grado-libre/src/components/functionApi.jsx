@@ -20,9 +20,15 @@ function InfoApi() {
 			[]
 			) 	
 			return(
-				<div>{
-					products.map((data) => data.title
-					)}
+				<div className="products">{
+					products.map((data) => (
+						<>
+							<h1>{data.title}</h1>
+							<img src={data.thumbnail} alt="producto" />
+							<p>El precio es ${data.price}</p>
+						</>
+						
+					))}
 					</div>
 			)
 	
