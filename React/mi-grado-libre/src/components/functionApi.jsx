@@ -22,14 +22,17 @@ function InfoApi() {
 			return(
 				<div className="products">{
 					products.map((data) => (
-						<>
-							<h1>{data.title}</h1>
-							<img src={data.thumbnail} alt="producto" />
-							<p>El precio es ${data.price}</p>
-						</>
+
+						<div className="container-producto">
+							<a className="interior-container" href={data.permalink}target="/blank">
+								<h3 className="titulo-producto">{data.title}</h3>
+								<img className="img-producto" src={data.thumbnail} alt="producto" />
+								<p className="precio-producto">El precio es ${data.price}</p>
+							</a>
+						</div>
 						
 					))}
-					</div>
+				</div>
 			)
 	
 }
