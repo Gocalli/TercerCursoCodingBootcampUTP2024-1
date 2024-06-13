@@ -1,7 +1,8 @@
-import React from "react";
-import { useState, useEffect } from "react";
 
-function InfoApi() {
+import React ,{ useState, useEffect } from "react";
+
+
+export function InfoProducts() {
 
 		const [ products, setProducts] = useState([])
 
@@ -33,8 +34,8 @@ function InfoApi() {
 						
 					))}
 				</div>
-			)
+			);
 	
 }
 
-export default InfoApi;
+// export default InfoApi;

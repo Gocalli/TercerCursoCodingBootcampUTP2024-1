@@ -1,10 +1,14 @@
-import InfoApi from './components/functionApi';
+import {  InfoProducts } from './components/functionApi';
+import {  InfoCategories } from './components/categories'
 import './App.css';
 
 function App() {
   return (
-    
-      <InfoApi></InfoApi>
+    <>
+      <InfoProducts />
+      <InfoCategories></InfoCategories>
+    </>
+      
     
     
   );
